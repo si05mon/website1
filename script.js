@@ -439,6 +439,16 @@ document.getElementById("contact-form").addEventListener("submit", function(e) {
 
 
 // =========================
+// SCROLL TO TOP
+// =========================
+
+const scrollTopBtn = document.getElementById("scroll-top");
+window.addEventListener("scroll", () => {
+    scrollTopBtn.classList.toggle("visible", window.scrollY > 300);
+});
+
+
+// =========================
 // INIT
 // =========================
 

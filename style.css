@@ -1053,6 +1053,40 @@ footer a {
 
 footer a:hover { color: #aaa; }
 
+/* =========================
+   SCROLL TO TOP
+========================= */
+
+#scroll-top {
+    display: none;
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    width: 42px;
+    height: 42px;
+    border-radius: 50%;
+    background: #111;
+    color: white;
+    border: none;
+    cursor: pointer;
+    align-items: center;
+    justify-content: center;
+    box-shadow: 0 4px 16px rgba(0,0,0,0.2);
+    z-index: 999;
+    transition: opacity .25s, transform .25s;
+    opacity: 0;
+    pointer-events: none;
+}
+
+#scroll-top.visible {
+    opacity: 1;
+    pointer-events: auto;
+}
+
+@media (max-width: 768px) {
+    #scroll-top { display: flex; }
+}
+
 
 
 /* =========================

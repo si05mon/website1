@@ -793,35 +793,25 @@ hr {
     position: relative;
 }
 
-/* hover overlay */
-.project-overlay {
+.project-link-btn {
     position: absolute;
-    inset: 0;
-    background: rgba(0,0,0,0.5);
+    bottom: 12px;
+    right: 12px;
+    width: 30px;
+    height: 30px;
+    border-radius: 50%;
+    background: rgba(255,255,255,0.82);
     display: flex;
     align-items: center;
     justify-content: center;
-    opacity: 0;
-    transition: opacity .3s;
-    z-index: 3;
+    color: #111;
+    z-index: 2;
+    transition: background .2s, transform .2s;
 }
 
-.project:hover .project-overlay {
-    opacity: 1;
-}
-
-.project-overlay span {
-    color: white;
-    font-size: 14px;
-    font-weight: 600;
-    display: flex;
-    align-items: center;
-    gap: 8px;
-    background: rgba(255,255,255,0.15);
-    padding: 10px 20px;
-    border-radius: 50px;
-    border: 1px solid rgba(255,255,255,0.3);
-    backdrop-filter: blur(4px);
+.project:hover .project-link-btn {
+    background: white;
+    transform: scale(1.12);
 }
 
 .project-deco {

@@ -1,0 +1,586 @@
+<!DOCTYPE html>
+<html lang="de">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Simon Digitals - Webdesign & Digitalisierung. Ich entwickle moderne Webseiten und digitale Systeme für Restaurants, Almhütten, Vereine und Unternehmen in Südtirol.">
+    <title>Simon Digitals | Webdesign & Digitalisierung</title>
+    <link rel="icon" type="image/svg+xml" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 32 32'><rect width='32' height='32' rx='8' fill='%23111'/><text x='16' y='23' font-family='Georgia,serif' font-size='22' font-weight='700' fill='white' text-anchor='middle'>S</text></svg>">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="stylesheet" href="style4.css">
+</head>
+<body>
+
+<!-- HEADER -->
+<header>
+    <nav>
+        <div class="logo">
+            <span>S</span>imon Digitals
+        </div>
+        <ul>
+            <li><a href="#about"    data-i18n="nav.about">Über mich</a></li>
+            <li><a href="#services" data-i18n="nav.services">Leistungen</a></li>
+            <li><a href="#process"  data-i18n="nav.process">Ablauf</a></li>
+            <li><a href="#projects" data-i18n="nav.projects">Projekte</a></li>
+            <li><a href="#contact"  data-i18n="nav.contact">Kontakt</a></li>
+        </ul>
+        <div class="lang-switcher">
+            <button class="lang-btn" data-lang="de">DE</button>
+            <button class="lang-btn" data-lang="it">IT</button>
+            <button class="lang-btn" data-lang="en">EN</button>
+        </div>
+    </nav>
+</header>
+
+
+<!-- HERO -->
+<section class="hero">
+
+    <div class="hero-content">
+        <span class="hero-badge" data-i18n="hero.badge">Freelance Developer · Südtirol</span>
+        <h1 data-i18n-html="hero.h1">Digitale Lösungen<br>für echte Erlebnisse.</h1>
+        <p data-i18n="hero.p">Moderne Webseiten und digitale Systeme für Unternehmen, Vereine, Restaurants und Almhütten.</p>
+        <div class="hero-actions">
+            <a class="button" href="#contact"><span data-i18n="hero.btnStart">Projekt starten</span></a>
+            <a class="button button-ghost" href="#projects"><span data-i18n="hero.btnProjects">Projekte ansehen</span></a>
+        </div>
+        <div class="hero-tech">
+            <span class="tech-chip">HTML</span>
+            <span class="tech-chip">CSS</span>
+            <span class="tech-chip">JavaScript</span>
+            <span class="tech-chip">PHP</span>
+            <span class="tech-chip">MySQL</span>
+        </div>
+    </div>
+
+    <div class="hero-visual">
+        <div class="hero-card">
+            <div class="hero-card-header">
+                <div class="dot red"></div>
+                <div class="dot yellow"></div>
+                <div class="dot green"></div>
+                <div class="mock-url">simondigitals.com</div>
+            </div>
+            <div class="hero-card-body">
+                <div class="mock-nav">
+                    <div class="mock-logo-dot"></div>
+                    <div class="mock-bar" style="width:60px;height:7px;"></div>
+                    <div style="margin-left:auto;display:flex;gap:10px;">
+                        <div class="mock-bar" style="width:35px;height:6px;opacity:.4;"></div>
+                        <div class="mock-bar" style="width:35px;height:6px;opacity:.4;"></div>
+                        <div class="mock-bar" style="width:35px;height:6px;opacity:.4;"></div>
+                    </div>
+                </div>
+                <div class="mock-hero-area">
+                    <div class="mock-hero-text">
+                        <div class="mock-bar long"></div>
+                        <div class="mock-bar" style="width:65%;height:7px;margin-top:6px;opacity:.5;"></div>
+                        <div class="mock-bar" style="width:50%;height:7px;margin-top:4px;opacity:.3;"></div>
+                        <div class="mock-btn-small"></div>
+                    </div>
+                    <div class="mock-hero-img"></div>
+                </div>
+                <div class="mock-section-label">
+                    <div class="mock-bar" style="width:90px;height:8px;background:#e0d9ff;"></div>
+                </div>
+                <div class="mock-cards-row">
+                    <div class="mock-card-small">
+                        <div class="mock-card-icon"></div>
+                        <div class="mock-bar" style="width:60%;height:5px;margin-top:6px;"></div>
+                        <div class="mock-bar" style="width:80%;height:4px;margin-top:4px;opacity:.5;"></div>
+                    </div>
+                    <div class="mock-card-small">
+                        <div class="mock-card-icon" style="background:#dbeafe;"></div>
+                        <div class="mock-bar" style="width:60%;height:5px;margin-top:6px;"></div>
+                        <div class="mock-bar" style="width:80%;height:4px;margin-top:4px;opacity:.5;"></div>
+                    </div>
+                    <div class="mock-card-small">
+                        <div class="mock-card-icon" style="background:#fce7f3;"></div>
+                        <div class="mock-bar" style="width:60%;height:5px;margin-top:6px;"></div>
+                        <div class="mock-bar" style="width:80%;height:4px;margin-top:4px;opacity:.5;"></div>
+                    </div>
+                </div>
+                <div class="mock-footer-bar">
+                    <div class="mock-bar" style="width:40%;height:5px;opacity:.3;"></div>
+                    <div class="mock-bar" style="width:40%;height:5px;opacity:.3;margin-left:auto;"></div>
+                </div>
+            </div>
+        </div>
+        <div class="hero-available">
+            <div class="pulse"></div>
+            <span data-i18n="hero.available">Verfügbar für neue Projekte</span>
+        </div>
+    </div>
+
+</section>
+
+<hr>
+
+<!-- ÜBER MICH -->
+<section id="about">
+    <div class="about-grid">
+
+        <div class="about-image-col">
+            <div class="avatar-wrap">
+                <div class="avatar-ring"></div>
+                <div class="avatar">
+                    <!-- Replace with: <img src="dein-foto.jpg" alt="Simon"> -->
+                    <div class="photo-placeholder">
+                        <svg viewBox="0 0 100 110" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <circle cx="50" cy="36" r="22" fill="#c4b5fd" opacity=".55"/>
+                            <ellipse cx="50" cy="95" rx="36" ry="22" fill="#c4b5fd" opacity=".35"/>
+                        </svg>
+                        <span class="photo-label" data-i18n="photo.label">Foto folgt</span>
+                    </div>
+                </div>
+            </div>
+            <div class="about-stats">
+                <div class="stat">
+                    <strong data-target="3" data-suffix="+">3+</strong>
+                    <span data-i18n="stat.years">Jahre</span>
+                </div>
+                <div class="stat">
+                    <strong data-target="10" data-suffix="+">10+</strong>
+                    <span data-i18n="stat.projects">Projekte</span>
+                </div>
+                <div class="stat">
+                    <strong data-i18n="stat.studyVal">IT</strong>
+                    <span data-i18n="stat.study">Studium</span>
+                </div>
+            </div>
+        </div>
+
+        <div class="about-text">
+            <h2 data-i18n="about.h2">Über mich</h2>
+            <p class="about-lead" data-i18n="about.lead">Ich bin Simon — Entwickler, Gestalter und digitaler Problemlöser aus Südtirol.</p>
+            <p data-i18n="about.p1">Als 21-jähriger angehender Informatiker verbinde ich technisches Know-how mit kreativem Denken. Ich entwickle Webseiten, die nicht nur funktionieren, sondern Eindruck hinterlassen.</p>
+            <p data-i18n="about.p2">Mein Fokus liegt auf lokalen Unternehmen in Südtirol — von Restaurants, Vereinen bis zum Familienbetrieb.</p>
+            <a class="button" href="#contact"><span data-i18n="about.btn">Kennenlernen</span></a>
+        </div>
+
+    </div>
+</section>
+
+<hr>
+
+<!-- LEISTUNGEN -->
+<section id="services">
+
+    <h2 data-i18n="services.h2">Meine Leistungen</h2>
+
+    <div class="services-grid">
+
+        <div class="service-item">
+            <div class="service-icon">
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round">
+                    <rect x="2" y="3" width="20" height="14" rx="2"/>
+                    <path d="M8 21h8M12 17v4"/>
+                </svg>
+            </div>
+            <div>
+                <h3 data-i18n="services.s1.h3">Webseiten</h3>
+                <p data-i18n="services.s1.p">Individuelle, moderne Webseiten — passend zu deiner Marke und deinen Kunden.</p>
+            </div>
+        </div>
+
+        <div class="service-item">
+            <div class="service-icon">
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round">
+                    <path d="M3 12a9 9 0 0 1 9-9 9.75 9.75 0 0 1 6.74 2.74L21 8"/>
+                    <path d="M21 3v5h-5"/>
+                    <path d="M21 12a9 9 0 0 1-9 9 9.75 9.75 0 0 1-6.74-2.74L3 16"/>
+                    <path d="M3 21v-5h5"/>
+                </svg>
+            </div>
+            <div>
+                <h3 data-i18n="services.s2.h3">Redesigns</h3>
+                <p data-i18n="services.s2.p">Veraltete Webseiten werden modernisiert — optisch und technisch auf dem neuesten Stand.</p>
+            </div>
+        </div>
+
+        <div class="service-item">
+            <div class="service-icon">
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round">
+                    <path d="M13 2L3 14h9l-1 8 10-12h-9l1-8z"/>
+                </svg>
+            </div>
+            <div>
+                <h3 data-i18n="services.s3.h3">Automatisierungen</h3>
+                <p data-i18n="services.s3.p">Digitale Prozesse die Zeit sparen — von Workflows bis zu automatischen Benachrichtigungen.</p>
+            </div>
+        </div>
+
+        <div class="service-item">
+            <div class="service-icon">
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round">
+                    <rect x="3" y="4" width="18" height="18" rx="2"/>
+                    <line x1="16" y1="2" x2="16" y2="6"/>
+                    <line x1="8" y1="2" x2="8" y2="6"/>
+                    <line x1="3" y1="10" x2="21" y2="10"/>
+                    <path d="M8 14h.01M12 14h.01M16 14h.01M8 18h.01M12 18h.01"/>
+                </svg>
+            </div>
+            <div>
+                <h3 data-i18n="services.s4.h3">Buchungssysteme</h3>
+                <p data-i18n="services.s4.p">Online-Reservierungen und individuelle Buchungslösungen für Gastro und Dienstleister.</p>
+            </div>
+        </div>
+
+        <div class="service-item">
+            <div class="service-icon">
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round">
+                    <ellipse cx="12" cy="5" rx="9" ry="3"/>
+                    <path d="M21 12c0 1.66-4 3-9 3s-9-1.34-9-3"/>
+                    <path d="M3 5v14c0 1.66 4 3 9 3s9-1.34 9-3V5"/>
+                </svg>
+            </div>
+            <div>
+                <h3 data-i18n="services.s5.h3">Datenbanken</h3>
+                <p data-i18n="services.s5.p">Strukturierte Datenverwaltung für Anwendungen — sauber, sicher und skalierbar.</p>
+            </div>
+        </div>
+
+        <div class="service-item">
+            <div class="service-icon">
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round">
+                    <circle cx="12" cy="7" r="3"/>
+                    <ellipse cx="12" cy="14" rx="4" ry="6"/>
+                    <path d="M11 5L9.5 3M13 5L14.5 3M8 10L5 8M8 13L4 13M8 17L5 19M16 10L19 8M16 13L20 13M16 17L19 19M12 9V20"/>
+                </svg>
+            </div>
+            <div>
+                <h3 data-i18n="services.s6.h3">Software / Anwendungen</h3>
+                <p data-i18n="services.s6.p">Software für tägliche Aufgaben und Geschäftsprozesse — Mobile Anwendungen für iOS und Android.</p>
+            </div>
+        </div>
+
+    </div>
+
+</section>
+
+<hr>
+
+<!-- PROZESS -->
+<section id="process">
+
+    <h2 data-i18n="process.h2">Wie ich arbeite</h2>
+    <p class="process-intro" data-i18n="process.intro">Von der ersten Idee bis zum fertigen Produkt — ein klarer, transparenter Ablauf.</p>
+
+    <div class="process-steps">
+
+        <div class="process-step">
+            <div class="step-num">01</div>
+            <div class="step-content">
+                <h3 data-i18n="process.s1.h3">Erstgespräch</h3>
+                <p data-i18n-html="process.s1.p">Wir sprechen über dein Projekt, deine Ziele und Budget — unverbindlich und <b>kostenlos.</b></p>
+            </div>
+        </div>
+
+        <div class="process-step">
+            <div class="step-num">02</div>
+            <div class="step-content">
+                <h3 data-i18n="process.s2.h3">Konzept</h3>
+                <p data-i18n="process.s2.p">Ich erstelle Struktur, Sitemap und erste Design-Ideen passend zu deinem Auftritt.</p>
+            </div>
+        </div>
+
+        <div class="process-step">
+            <div class="step-num">03</div>
+            <div class="step-content">
+                <h3 data-i18n="process.s3.h3">Entwicklung</h3>
+                <p data-i18n="process.s3.p">Deine Webseite wird gestaltet, programmiert und getestet — mit regelmäßigen Updates.</p>
+            </div>
+        </div>
+
+        <div class="process-step">
+            <div class="step-num">04</div>
+            <div class="step-content">
+                <h3 data-i18n="process.s4.h3">Feedback</h3>
+                <p data-i18n="process.s4.p">Ich präsentiere den aktuellen Stand und nehme dein Feedback entgegen.</p>
+            </div>
+        </div>
+
+        <div class="process-step">
+            <div class="step-num">05</div>
+            <div class="step-content">
+                <h3 data-i18n="process.s5.h3">Launch & Support</h3>
+                <p data-i18n="process.s5.p">Nach finaler Freigabe geht alles live. Für Wartung und Support stehe ich immer zur Verfügung.</p>
+            </div> 
+        </div>
+
+    </div>
+
+</section>
+
+<hr>
+
+<!-- PROJEKTE -->
+<section id="projects">
+
+    <h2 data-i18n="projects.h2">Projekte</h2>
+
+    <div class="projects">
+
+        <a class="project" href="#" target="_blank" rel="noopener">
+            <div class="project-image" style="background: linear-gradient(150deg, #1e1b4b 0%, #312e81 100%);">
+                <span class="project-tag" data-i18n="projects.p1.tag">Webseite</span>
+                <div class="project-overlay">
+                    <span><span data-i18n="projects.p1.overlay">Webseite öffnen</span>
+                        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" width="16" height="16">
+                            <path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6"/>
+                            <polyline points="15 3 21 3 21 9"/>
+                            <line x1="10" y1="14" x2="21" y2="3"/>
+                        </svg>
+                    </span>
+                </div>
+                <div class="project-deco">
+                    <svg viewBox="0 0 140 90" fill="none">
+                        <rect x="8" y="8" width="124" height="74" rx="7" fill="rgba(255,255,255,0.06)"/>
+                        <rect x="8" y="8" width="124" height="18" rx="7" fill="rgba(255,255,255,0.09)"/>
+                        <circle cx="20" cy="17" r="3" fill="rgba(255,255,255,0.3)"/>
+                        <circle cx="30" cy="17" r="3" fill="rgba(255,255,255,0.3)"/>
+                        <circle cx="40" cy="17" r="3" fill="rgba(255,255,255,0.3)"/>
+                        <rect x="18" y="36" width="45" height="6" rx="3" fill="rgba(255,255,255,0.22)"/>
+                        <rect x="18" y="48" width="65" height="4" rx="2" fill="rgba(255,255,255,0.12)"/>
+                        <rect x="18" y="57" width="50" height="4" rx="2" fill="rgba(255,255,255,0.08)"/>
+                        <rect x="90" y="32" width="34" height="28" rx="5" fill="rgba(255,255,255,0.1)"/>
+                    </svg>
+                </div>
+            </div>
+            <div class="project-body">
+                <h3 data-i18n="projects.p1.h3">Familienbetrieb Webseite</h3>
+                <p data-i18n="projects.p1.p">Moderne Webseite für eine Berghütte — mit Atmosphäre, Bilderwelt und Gästeerlebnis im Mittelpunkt.</p>
+            </div>
+        </a>
+
+        <a class="project" href="#" target="_blank" rel="noopener">
+            <div class="project-image" style="background: linear-gradient(150deg, #0c1445 0%, #1a2f6f 100%);">
+                <span class="project-tag" data-i18n="projects.p2.tag">Gastronomie</span>
+                <div class="project-overlay">
+                    <span><span data-i18n="projects.p2.overlay">Webseite öffnen</span>
+                        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" width="16" height="16">
+                            <path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6"/>
+                            <polyline points="15 3 21 3 21 9"/>
+                            <line x1="10" y1="14" x2="21" y2="3"/>
+                        </svg>
+                    </span>
+                </div>
+                <div class="project-deco">
+                    <svg viewBox="0 0 140 90" fill="none">
+                        <rect x="8" y="8" width="124" height="74" rx="7" fill="rgba(255,255,255,0.06)"/>
+                        <rect x="8" y="8" width="124" height="18" rx="7" fill="rgba(255,255,255,0.09)"/>
+                        <circle cx="20" cy="17" r="3" fill="rgba(255,255,255,0.3)"/>
+                        <circle cx="30" cy="17" r="3" fill="rgba(255,255,255,0.3)"/>
+                        <circle cx="40" cy="17" r="3" fill="rgba(255,255,255,0.3)"/>
+                        <rect x="18" y="32" width="104" height="14" rx="4" fill="rgba(255,255,255,0.1)"/>
+                        <rect x="18" y="52" width="30" height="18" rx="4" fill="rgba(255,255,255,0.1)"/>
+                        <rect x="54" y="52" width="30" height="18" rx="4" fill="rgba(255,255,255,0.1)"/>
+                        <rect x="90" y="52" width="30" height="18" rx="4" fill="rgba(255,255,255,0.1)"/>
+                    </svg>
+                </div>
+            </div>
+            <div class="project-body">
+                <h3 data-i18n="projects.p2.h3">Restaurant & Pizzeria</h3>
+                <p data-i18n="projects.p2.p">Digitale Präsentation eines Gastronomiebetriebs mit Menüansicht und Kontaktintegration.</p>
+            </div>
+        </a>
+
+        <a class="project project-wip" href="#" target="_blank" rel="noopener">
+            <div class="project-image" style="background: linear-gradient(150deg, #1a0f38 0%, #2e1f6e 100%);">
+                <span class="project-tag" data-i18n="projects.p3.tag">In Entwicklung...</span>
+                <div class="project-overlay">
+                    <span><span data-i18n="projects.p3.overlay">Demnächst verfügbar</span></span>
+                </div>
+                <div class="project-deco">
+                    <svg viewBox="0 0 140 90" fill="none">
+                        <rect x="8" y="8" width="124" height="74" rx="7" fill="rgba(255,255,255,0.05)"/>
+                        <rect x="40" y="28" width="60" height="8" rx="4" fill="rgba(255,255,255,0.18)"/>
+                        <rect x="30" y="44" width="80" height="5" rx="3" fill="rgba(255,255,255,0.1)"/>
+                        <rect x="35" y="55" width="70" height="5" rx="3" fill="rgba(255,255,255,0.07)"/>
+                        <circle cx="70" cy="75" r="6" fill="none" stroke="rgba(255,255,255,0.2)" stroke-width="2"/>
+                        <circle cx="70" cy="75" r="2" fill="rgba(255,255,255,0.25)"/>
+                    </svg>
+                </div>
+            </div>
+            <div class="project-body">
+                <h3 data-i18n="projects.p3.h3">Aktuelles Projekt</h3>
+                <p data-i18n="projects.p3.p">Eine weitere digitale Lösung befindet sich in Entwicklung — bald mehr dazu.</p>
+            </div>
+        </a>
+
+    </div>
+
+</section>
+
+<hr>
+
+<!-- KONTAKT -->
+<section id="contact">
+
+    <div class="contact-grid">
+
+        <div class="contact-left">
+            <span class="contact-eyebrow" data-i18n="contact.eyebrow">Kontakt</span>
+            <h2 data-i18n-html="contact.h2">Lass uns dein<br>Projekt starten.</h2>
+            <p data-i18n="contact.p">Du hast eine Idee? Ich helfe dir, sie digital umzusetzen — schnell, modern und persönlich.</p>
+
+            <div class="contact-links">
+
+                <a href="mailto:simon05.freelancer@gmail.com" class="contact-link">
+                    <div class="contact-link-icon">
+                        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round">
+                            <rect x="2" y="4" width="20" height="16" rx="2"/>
+                            <path d="M2 7l10 7 10-7"/>
+                        </svg>
+                    </div>
+                    <div>
+                        <span class="link-label" data-i18n="contact.emailLabel">E-Mail</span>
+                        <span class="link-value">simon05.freelancer@gmail.com</span>
+                    </div>
+                </a>
+
+                <a href="tel:+393319130098" class="contact-link">
+                    <div class="contact-link-icon">
+                        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round">
+                            <path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07A19.5 19.5 0 0 1 4.69 13a19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 3.6 2.18h3a2 2 0 0 1 2 1.72 12.84 12.84 0 0 0 .7 2.81 2 2 0 0 1-.45 2.11L7.91 9.91a16 16 0 0 0 6.16 6.16l.91-.91a2 2 0 0 1 2.11-.45 12.84 12.84 0 0 0 2.81.7A2 2 0 0 1 22 16.92z"/>
+                        </svg>
+                    </div>
+                    <div>
+                        <span class="link-label" data-i18n="contact.phoneLabel">Telefon</span>
+                        <span class="link-value">+39 331 913 0098</span>
+                    </div>
+                </a>
+
+                <a href="https://wa.me/393319130098" target="_blank" rel="noopener" class="contact-link">
+                    <div class="contact-link-icon">
+                        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round">
+                            <path d="M21 11.5a8.38 8.38 0 0 1-.9 3.8 8.5 8.5 0 0 1-7.6 4.7 8.38 8.38 0 0 1-3.8-.9L3 21l1.9-5.7a8.38 8.38 0 0 1-.9-3.8 8.5 8.5 0 0 1 4.7-7.6 8.38 8.38 0 0 1 3.8-.9h.5a8.48 8.48 0 0 1 8 8v.5z"/>
+                        </svg>
+                    </div>
+                    <div>
+                        <span class="link-label" data-i18n="contact.whatsappLabel">WhatsApp</span>
+                        <span class="link-value" data-i18n="contact.whatsappValue">Nachricht senden</span>
+                    </div>
+                </a>
+
+                <a href="https://linkedin.com/in/DEIN-PROFIL" target="_blank" rel="noopener" class="contact-link">
+                    <div class="contact-link-icon">
+                        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round">
+                            <path d="M16 8a6 6 0 0 1 6 6v7h-4v-7a2 2 0 0 0-2-2 2 2 0 0 0-2 2v7h-4v-7a6 6 0 0 1 6-6z"/>
+                            <rect x="2" y="9" width="4" height="12"/>
+                            <circle cx="4" cy="4" r="2"/>
+                        </svg>
+                    </div>
+                    <div>
+                        <span class="link-label" data-i18n="contact.linkedinLabel">LinkedIn</span>
+                        <span class="link-value" data-i18n="contact.linkedinValue">Profil ansehen</span>
+                    </div>
+                </a>
+
+                <a href="#" class="contact-link">
+                    <div class="contact-link-icon">
+                        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round">
+                            <path d="M20 10c0 6-8 12-8 12S4 16 4 10a8 8 0 1 1 16 0z"/>
+                            <circle cx="12" cy="10" r="3"/>
+                        </svg>
+                    </div>
+                    <div>
+                        <span class="link-label" data-i18n="contact.locationLabel">Standort</span>
+                        <span class="link-value" data-i18n="contact.locationValue">Gargazon, Südtirol</span>
+                    </div>
+                </a>
+
+            </div>
+        </div>
+
+        <div class="contact-right">
+            <form class="contact-form" id="contact-form" novalidate autocomplete="off">
+                <div class="hp-field" aria-hidden="true">
+                    <input type="text" name="website" tabindex="-1" autocomplete="off">
+                </div>
+                <div class="form-row">
+                    <div class="form-group">
+                        <label data-i18n="form.nameLbl">Name</label>
+                        <input id="form-name" type="text" data-i18n-placeholder="form.namePh" placeholder="Dein Name">
+                    </div>
+                    <div class="form-group">
+                        <label data-i18n="form.emailLbl">E-Mail</label>
+                        <input id="form-email" type="email" data-i18n-placeholder="form.emailPh" placeholder="deine@email.com">
+                    </div>
+                </div>
+                <div class="form-group form-group-grow">
+                    <label data-i18n="form.msgLbl">Was planst du?</label>
+                    <textarea id="form-msg" data-i18n-placeholder="form.msgPh" placeholder="Beschreib kurz dein Projekt..."></textarea>
+                </div>
+                <button type="submit" class="button contact-btn" id="form-submit">
+                    <span data-i18n="form.btn">Nachricht senden</span>
+                    <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                        <path d="M5 12h14M12 5l7 7-7 7"/>
+                    </svg>
+                </button>
+            </form>
+        </div>
+
+    </div>
+
+</section>
+
+
+
+<footer>
+    <p>
+        © 2026 Simon Digitals · Gargazon, Südtirol
+        <span class="footer-sep">·</span>
+        <a href="#" onclick="openImpressum(); return false;" data-i18n="footer.imprint">Impressum</a>
+    </p>
+</footer>
+
+
+
+<!-- IMPRESSUM -->
+<div class="modal-overlay" id="impressum-modal" onclick="closeOnOverlay(event)">
+    <div class="modal" role="dialog" aria-modal="true" aria-label="Impressum">
+        <button class="modal-close" onclick="closeImpressum()" aria-label="Schließen">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round">
+                <line x1="18" y1="6" x2="6" y2="18"/>
+                <line x1="6" y1="6" x2="18" y2="18"/>
+            </svg>
+        </button>
+
+        <h3>Impressum</h3>
+        <p class="modal-sub">Angaben gemäß gesetzlicher Informationspflicht (D.Lgs. 70/2003)</p>
+
+        <div class="modal-content">
+            <div class="imprint-block">
+                <h4>Verantwortlicher / Responsabile</h4>
+                <p>Simon Ohrwalder<br>39010 Gargazon (BZ)<br>Südtirol / Alto Adige — Italien</p>
+            </div>
+            <div class="imprint-block">
+                <h4>Kontakt</h4>
+                <p>E-Mail: simon05.freelancer@gmail.com<br>Tel.: +39 331 913 0098</p>
+            </div>
+            <div class="imprint-block">
+                <h4>Steuerliche Angaben</h4>
+                <p>Codice Fiscale: [IT]<br>Partita IVA: [IT]<br>Berufliche Tätigkeit: Freiberuflicher Webentwickler</p>
+            </div>
+            <div class="imprint-block">
+                <h4>Haftungshinweis</h4>
+                <p>Trotz sorgfältiger inhaltlicher Kontrolle übernehmen wir keine Haftung für die Inhalte externer Links. Für den Inhalt der verlinkten Seiten sind ausschließlich deren Betreiber verantwortlich.</p>
+            </div>
+            <div class="imprint-block">
+                <h4>Urheberrecht</h4>
+                <p>Die Inhalte und Werke dieser Website unterliegen dem Urheberrecht. Jede Vervielfältigung, Bearbeitung oder Verbreitung bedarf der schriftlichen Zustimmung des Urhebers.</p>
+            </div>
+            <div class="imprint-block">
+                <h4>Datenschutz</h4>
+                <p>Diese Website erhebt keine personenbezogenen Daten ohne ausdrückliche Zustimmung. Kontaktanfragen per E-Mail werden ausschließlich zur Bearbeitung der Anfrage verwendet.</p>
+            </div>
+        </div>
+    </div>
+</div>
+
+<script src="https://cdn.jsdelivr.net/npm/@emailjs/browser@4/dist/email.min.js"></script>
+<script src="script4.js"></script>
+
+</body>
+</html>

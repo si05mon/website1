@@ -205,7 +205,16 @@ nav a:hover { color: #111; }
 
 .mobile-menu a:hover { color: #6d28d9; }
 
-.mobile-lang { margin-top: 0; }
+.mobile-lang {
+    margin-top: 0;
+    background: #f0f0f0;
+    padding: 4px;
+}
+
+.mobile-lang .lang-btn {
+    padding: 8px 18px;
+    font-size: 14px;
+}
 
 /* =========================
    HR DIVIDER
@@ -1352,7 +1361,7 @@ footer a:hover { color: #aaa; }
 
     nav { padding: 16px 20px; }
     nav ul { display: none; }
-    .lang-switcher { margin-left: auto; display: none; }
+    nav > .lang-switcher { display: none; }
     .hamburger { display: flex; }
 
     section { padding: 80px 7%; }

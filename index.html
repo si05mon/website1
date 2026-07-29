@@ -6,6 +6,46 @@
     <meta name="description" content="Simon Digitals - Webdesign & Digitalisierung. Ich entwickle moderne Webseiten und digitale Systeme für Restaurants, Almhütten, Vereine und Unternehmen in Südtirol.">
     <title>Simon Digitals | Webdesign & Digitalisierung</title>
     <link rel="icon" type="image/svg+xml" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 32 32'><rect width='32' height='32' rx='8' fill='%23111'/><text x='16' y='23' font-family='Georgia,serif' font-size='22' font-weight='700' fill='white' text-anchor='middle'>S</text></svg>">
+
+    <!-- Open Graph -->
+    <meta property="og:type" content="website">
+    <meta property="og:url" content="https://simondigitals.com">
+    <meta property="og:title" content="Simon Digitals | Webdesign & Digitalisierung">
+    <meta property="og:description" content="Moderne Webseiten und digitale Systeme für Unternehmen, Vereine und Gastronomiebetriebe in Südtirol. Freelance Webentwickler aus Gargazon.">
+    <meta property="og:image" content="https://simondigitals.com/bilder/preview-website.png">
+    <meta property="og:locale" content="de_DE">
+    <meta property="og:locale:alternate" content="it_IT">
+    <meta property="og:locale:alternate" content="en_GB">
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:title" content="Simon Digitals | Webdesign & Digitalisierung">
+    <meta name="twitter:description" content="Moderne Webseiten und digitale Systeme für Unternehmen in Südtirol.">
+    <meta name="twitter:image" content="https://simondigitals.com/bilder/preview-website.png">
+
+    <!-- JSON-LD Structured Data -->
+    <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@type": "Person",
+      "name": "Simon Ohrwalder",
+      "jobTitle": "Freelance Web Developer",
+      "description": "Freelance Webentwickler aus Südtirol. Moderne Webseiten, Buchungssysteme und digitale Lösungen für lokale Unternehmen.",
+      "url": "https://simondigitals.com",
+      "email": "simon05.freelancer@gmail.com",
+      "telephone": "+393319130098",
+      "image": "https://simondigitals.com/bilder/preview-website.png",
+      "address": {
+        "@type": "PostalAddress",
+        "addressLocality": "Gargazon",
+        "postalCode": "39010",
+        "addressRegion": "Südtirol",
+        "addressCountry": "IT"
+      },
+      "areaServed": { "@type": "State", "name": "Südtirol" },
+      "knowsAbout": ["Webdesign", "Webentwicklung", "PHP", "JavaScript", "MySQL", "Buchungssysteme", "Digitalisierung"],
+      "sameAs": ["https://www.linkedin.com/in/simon-ohrwalder-2b815733b/"]
+    }
+    </script>
+
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="stylesheet" href="style.css">
 </head>
@@ -29,8 +69,29 @@
             <button class="lang-btn" data-lang="it">IT</button>
             <button class="lang-btn" data-lang="en">EN</button>
         </div>
+        <button class="hamburger" id="hamburger" aria-label="Menü öffnen" aria-expanded="false">
+            <span></span>
+            <span></span>
+            <span></span>
+        </button>
     </nav>
 </header>
+
+<!-- MENU -->
+<div class="mobile-menu" id="mobile-menu" aria-hidden="true">
+    <ul>
+        <li><a href="#about"    data-i18n="nav.about">Über mich</a></li>
+        <li><a href="#services" data-i18n="nav.services">Leistungen</a></li>
+        <li><a href="#process"  data-i18n="nav.process">Ablauf</a></li>
+        <li><a href="#projects" data-i18n="nav.projects">Projekte</a></li>
+        <li><a href="#contact"  data-i18n="nav.contact">Kontakt</a></li>
+    </ul>
+    <div class="lang-switcher mobile-lang">
+        <button class="lang-btn" data-lang="de">DE</button>
+        <button class="lang-btn" data-lang="it">IT</button>
+        <button class="lang-btn" data-lang="en">EN</button>
+    </div>
+</div>
 
 <!-- HERO -->
 <section class="hero">
@@ -107,7 +168,10 @@
         </div>
         <div class="hero-available">
             <div class="pulse"></div>
-            <span data-i18n="hero.available">Verfügbar für neue Projekte</span>
+            <div class="hero-available-text">
+                <span data-i18n="hero.available">Verfügbar für neue Projekte</span>
+                <span class="hero-available-sub" data-i18n="hero.availableSub">Antwort innerhalb 24h</span>
+            </div>
         </div>
     </div>
 
@@ -123,14 +187,7 @@
             <div class="avatar-wrap">
                 <div class="avatar-ring"></div>
                 <div class="avatar">
-                    <!-- Replace with: <img src="dein-foto.jpg" alt="Simon"> -->
-                    <div class="photo-placeholder">
-                        <svg viewBox="0 0 100 110" fill="none" xmlns="http://www.w3.org/2000/svg">
-                            <circle cx="50" cy="36" r="22" fill="#c4b5fd" opacity=".55"/>
-                            <ellipse cx="50" cy="95" rx="36" ry="22" fill="#c4b5fd" opacity=".35"/>
-                        </svg>
-                        <span class="photo-label" data-i18n="photo.label">Foto folgt</span>
-                    </div>
+                    <img src="bilder/profilbild1.jpeg" alt="Profilbild">
                 </div>
             </div>
             <div class="about-stats">
@@ -321,23 +378,12 @@
     <div class="projects">
 
         <a class="project" href="/projects/PaolinaHuette/index.html" target="_blank" rel="noopener">
-            <div class="project-image" style="background: linear-gradient(150deg, #1e1b4b 0%, #312e81 100%);">
+            <div class="project-image">
+                <img src="bilder/preview-paolinahuette.jpg" alt="Paolinahütte Webseite Vorschau" class="project-screenshot">
+                <div class="project-image-overlay"></div>
                 <span class="project-tag" data-i18n="projects.p1.tag">Webseite</span>
                 <div class="project-link-btn">
                     <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round" width="13" height="13"><path d="M7 17L17 7M7 7h10v10"/></svg>
-                </div>
-                <div class="project-deco">
-                    <svg viewBox="0 0 140 90" fill="none">
-                        <rect x="8" y="8" width="124" height="74" rx="7" fill="rgba(255,255,255,0.06)"/>
-                        <rect x="8" y="8" width="124" height="18" rx="7" fill="rgba(255,255,255,0.09)"/>
-                        <circle cx="20" cy="17" r="3" fill="rgba(255,255,255,0.3)"/>
-                        <circle cx="30" cy="17" r="3" fill="rgba(255,255,255,0.3)"/>
-                        <circle cx="40" cy="17" r="3" fill="rgba(255,255,255,0.3)"/>
-                        <rect x="18" y="36" width="45" height="6" rx="3" fill="rgba(255,255,255,0.22)"/>
-                        <rect x="18" y="48" width="65" height="4" rx="2" fill="rgba(255,255,255,0.12)"/>
-                        <rect x="18" y="57" width="50" height="4" rx="2" fill="rgba(255,255,255,0.08)"/>
-                        <rect x="90" y="32" width="34" height="28" rx="5" fill="rgba(255,255,255,0.1)"/>
-                    </svg>
                 </div>
             </div>
             <div class="project-body">
@@ -347,23 +393,12 @@
         </a>
 
         <a class="project" href="/projects/Oberhauser/index.html" target="_blank" rel="noopener">
-            <div class="project-image" style="background: linear-gradient(150deg, #0c1445 0%, #1a2f6f 100%);">
+            <div class="project-image">
+                <img src="bilder/preview-oberhauser.png" alt="Oberhauser Restaurant Webseite Vorschau" class="project-screenshot">
+                <div class="project-image-overlay"></div>
                 <span class="project-tag" data-i18n="projects.p2.tag">Gastronomie</span>
                 <div class="project-link-btn">
                     <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round" width="13" height="13"><path d="M7 17L17 7M7 7h10v10"/></svg>
-                </div>
-                <div class="project-deco">
-                    <svg viewBox="0 0 140 90" fill="none">
-                        <rect x="8" y="8" width="124" height="74" rx="7" fill="rgba(255,255,255,0.06)"/>
-                        <rect x="8" y="8" width="124" height="18" rx="7" fill="rgba(255,255,255,0.09)"/>
-                        <circle cx="20" cy="17" r="3" fill="rgba(255,255,255,0.3)"/>
-                        <circle cx="30" cy="17" r="3" fill="rgba(255,255,255,0.3)"/>
-                        <circle cx="40" cy="17" r="3" fill="rgba(255,255,255,0.3)"/>
-                        <rect x="18" y="32" width="104" height="14" rx="4" fill="rgba(255,255,255,0.1)"/>
-                        <rect x="18" y="52" width="30" height="18" rx="4" fill="rgba(255,255,255,0.1)"/>
-                        <rect x="54" y="52" width="30" height="18" rx="4" fill="rgba(255,255,255,0.1)"/>
-                        <rect x="90" y="52" width="30" height="18" rx="4" fill="rgba(255,255,255,0.1)"/>
-                    </svg>
                 </div>
             </div>
             <div class="project-body">
@@ -373,9 +408,8 @@
         </a>
 
         <a class="project project-wip">
-            <div class="project-image" style="background: linear-gradient(150deg, #1a0f38 0%, #2e1f6e 100%);">
-                <span class="project-tag" data-i18n="projects.p3.tag">In Entwicklung...</span>
-                <div class="project-deco">
+            <div class="project-image project-image-wip">
+                <div class="project-wip-deco">
                     <svg viewBox="0 0 140 90" fill="none">
                         <rect x="8" y="8" width="124" height="74" rx="7" fill="rgba(255,255,255,0.05)"/>
                         <rect x="40" y="28" width="60" height="8" rx="4" fill="rgba(255,255,255,0.18)"/>
@@ -385,6 +419,7 @@
                         <circle cx="70" cy="75" r="2" fill="rgba(255,255,255,0.25)"/>
                     </svg>
                 </div>
+                <span class="project-tag" data-i18n="projects.p3.tag">In Entwicklung...</span>
             </div>
             <div class="project-body">
                 <h3 data-i18n="projects.p3.h3">Aktuelles Projekt</h3>
@@ -514,11 +549,13 @@
         © 2026 Simon Digitals · Gargazon, Südtirol
         <span class="footer-sep">·</span>
         <a href="#" onclick="openImpressum(); return false;" data-i18n="footer.imprint">Impressum</a>
+        <span class="footer-sep">·</span>
+        <a href="#" onclick="openPrivacy(); return false;" data-i18n="footer.privacy">Datenschutz</a>
     </p>
 </footer>
 
-<!-- IMPRESSUM -->
-<div class="modal-overlay" id="impressum-modal" onclick="closeOnOverlay(event)">
+
+<div class="modal-overlay" id="impressum-modal" onclick="closeOnOverlay(event)" >   <!-- IMPRESSUM -->
     <div class="modal" role="dialog" aria-modal="true" aria-label="Impressum">
         <button class="modal-close" onclick="closeImpressum()" aria-label="Schließen">
             <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round">
@@ -554,6 +591,56 @@
             <div class="imprint-block">
                 <h4>Datenschutz</h4>
                 <p>Diese Website erhebt keine personenbezogenen Daten ohne ausdrückliche Zustimmung. Kontaktanfragen per E-Mail werden ausschließlich zur Bearbeitung der Anfrage verwendet.</p>
+            </div>
+        </div>
+    </div>
+</div>
+
+
+<div class="modal-overlay" id="privacy-modal" onclick="closePrivacyOnOverlay(event)">   <!-- DATENSCHUTZ -->
+    <div class="modal" role="dialog" aria-modal="true" aria-label="Datenschutz">
+        <button class="modal-close" onclick="closePrivacy()" aria-label="Schließen">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round">
+                <line x1="18" y1="6" x2="6" y2="18"/>
+                <line x1="6" y1="6" x2="18" y2="18"/>
+            </svg>
+        </button>
+
+        <h3 data-i18n="privacy.title">Datenschutzerklärung</h3>
+        <p class="modal-sub" data-i18n="privacy.sub">Gemäß DSGVO (EU) 2016/679 und D.Lgs. 196/2003</p>
+
+        <div class="modal-content">
+            <div class="imprint-block">
+                <h4 data-i18n="privacy.s1.h4">1. Verantwortlicher</h4>
+                <p data-i18n-html="privacy.s1.p">Simon Ohrwalder · 39010 Gargazon (BZ), Südtirol, Italien<br>E-Mail: simon05.freelancer@gmail.com · Tel.: +39 331 913 0098</p>
+            </div>
+            <div class="imprint-block">
+                <h4 data-i18n="privacy.s2.h4">2. Erhobene Daten</h4>
+                <p data-i18n="privacy.s2.p">Diese Website erhebt ausschließlich Daten, die Sie aktiv über das Kontaktformular übermitteln: Name, E-Mail-Adresse und Ihre Nachricht. Es werden keine weiteren personenbezogenen Daten erhoben.</p>
+            </div>
+            <div class="imprint-block">
+                <h4 data-i18n="privacy.s3.h4">3. Zweck & Rechtsgrundlage</h4>
+                <p data-i18n="privacy.s3.p">Die Daten dienen ausschließlich der Bearbeitung Ihrer Kontaktanfrage. Rechtsgrundlage ist Art. 6 Abs. 1 lit. b DSGVO (vorvertragliche Maßnahmen) sowie lit. f DSGVO (berechtigtes Interesse). Die Daten werden nicht an Dritte weitergegeben oder für Werbezwecke genutzt.</p>
+            </div>
+            <div class="imprint-block">
+                <h4 data-i18n="privacy.s4.h4">4. Drittanbieter – EmailJS</h4>
+                <p data-i18n-html="privacy.s4.p">Zur technischen Übermittlung von Kontaktnachrichten wird <b>EmailJS</b> (EmailJS Ltd., London, UK) eingesetzt. Ihre eingegebenen Daten (Name, E-Mail, Nachricht) werden dabei an EmailJS-Server übertragen. EmailJS verarbeitet diese Daten gemäß ihrer Datenschutzrichtlinie. Weitere Informationen: <a href="https://www.emailjs.com/legal/privacy-policy" target="_blank" rel="noopener" style="color:#6d28d9">emailjs.com/legal/privacy-policy</a></p>
+            </div>
+            <div class="imprint-block">
+                <h4 data-i18n="privacy.s5.h4">5. Speicherdauer</h4>
+                <p data-i18n="privacy.s5.p">Ihre Daten werden nur so lange gespeichert, wie es zur Bearbeitung Ihrer Anfrage erforderlich ist, maximal jedoch 6 Monate nach Abschluss der Kommunikation.</p>
+            </div>
+            <div class="imprint-block">
+                <h4 data-i18n="privacy.s6.h4">6. Keine Cookies – Kein Tracking</h4>
+                <p data-i18n="privacy.s6.p">Diese Website verwendet keine Cookies, kein Google Analytics und keine sonstigen Tracking- oder Analyse-Technologien. Es werden keine Nutzerprofile erstellt.</p>
+            </div>
+            <div class="imprint-block">
+                <h4 data-i18n="privacy.s7.h4">7. Ihre Rechte</h4>
+                <p data-i18n="privacy.s7.p">Sie haben das Recht auf: Auskunft (Art. 15 DSGVO), Berichtigung (Art. 16), Löschung (Art. 17), Einschränkung der Verarbeitung (Art. 18), Datenübertragbarkeit (Art. 20) und Widerspruch (Art. 21). Zur Ausübung Ihrer Rechte wenden Sie sich an die oben genannte E-Mail-Adresse.</p>
+            </div>
+            <div class="imprint-block">
+                <h4 data-i18n="privacy.s8.h4">8. Beschwerderecht</h4>
+                <p data-i18n-html="privacy.s8.p">Sie haben das Recht, sich bei der zuständigen Datenschutzbehörde zu beschweren. In Italien: <b>Garante per la protezione dei dati personali</b> — <a href="https://www.garanteprivacy.it" target="_blank" rel="noopener" style="color:#6d28d9">garanteprivacy.it</a></p>
             </div>
         </div>
     </div>

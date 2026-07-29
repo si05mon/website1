@@ -12,7 +12,8 @@ const translations = {
             p: 'Moderne Webseiten und digitale Systeme für Unternehmen, Vereine, Restaurants und Almhütten.',
             btnStart: 'Projekt starten',
             btnProjects: 'Projekte ansehen',
-            available: 'Verfügbar für neue Projekte'
+            available: 'Verfügbar für neue Projekte',
+            availableSub: 'Antwort innerhalb 24h'
         },
         about: {
             h2: 'Über mich',
@@ -64,7 +65,19 @@ const translations = {
             sending: 'Wird gesendet…', sent: '✓ Nachricht gesendet!',
             error: 'Fehler — bitte erneut versuchen', wait: 'Bitte warte einen Moment…'
         },
-        footer: { imprint: 'Impressum' }
+        footer: { imprint: 'Impressum', privacy: 'Datenschutz' },
+        privacy: {
+            title: 'Datenschutzerklärung',
+            sub: 'Gemäß DSGVO (EU) 2016/679 und D.Lgs. 196/2003',
+            s1: { h4: '1. Verantwortlicher', p: 'Simon Ohrwalder · 39010 Gargazon (BZ), Südtirol, Italien<br>E-Mail: simon05.freelancer@gmail.com · Tel.: +39 331 913 0098' },
+            s2: { h4: '2. Erhobene Daten', p: 'Diese Website erhebt ausschließlich Daten, die Sie aktiv über das Kontaktformular übermitteln: Name, E-Mail-Adresse und Ihre Nachricht. Es werden keine weiteren personenbezogenen Daten erhoben.' },
+            s3: { h4: '3. Zweck & Rechtsgrundlage', p: 'Die Daten dienen ausschließlich der Bearbeitung Ihrer Kontaktanfrage. Rechtsgrundlage ist Art. 6 Abs. 1 lit. b DSGVO sowie lit. f DSGVO. Die Daten werden nicht an Dritte weitergegeben oder für Werbezwecke genutzt.' },
+            s4: { h4: '4. Drittanbieter – EmailJS', p: 'Zur technischen Übermittlung von Kontaktnachrichten wird <b>EmailJS</b> (EmailJS Ltd., London, UK) eingesetzt. Ihre Daten (Name, E-Mail, Nachricht) werden dabei an EmailJS-Server übertragen. Weitere Informationen: <a href="https://www.emailjs.com/legal/privacy-policy" target="_blank" rel="noopener" style="color:#6d28d9">emailjs.com/legal/privacy-policy</a>' },
+            s5: { h4: '5. Speicherdauer', p: 'Ihre Daten werden nur so lange gespeichert, wie es zur Bearbeitung Ihrer Anfrage erforderlich ist, maximal 6 Monate nach Abschluss der Kommunikation.' },
+            s6: { h4: '6. Keine Cookies – Kein Tracking', p: 'Diese Website verwendet keine Cookies, kein Google Analytics und keine sonstigen Tracking- oder Analyse-Technologien. Es werden keine Nutzerprofile erstellt.' },
+            s7: { h4: '7. Ihre Rechte', p: 'Sie haben das Recht auf: Auskunft (Art. 15 DSGVO), Berichtigung (Art. 16), Löschung (Art. 17), Einschränkung (Art. 18), Datenübertragbarkeit (Art. 20) und Widerspruch (Art. 21). Kontakt: simon05.freelancer@gmail.com' },
+            s8: { h4: '8. Beschwerderecht', p: 'Sie können sich bei der zuständigen Datenschutzbehörde beschweren. In Italien: <b>Garante per la protezione dei dati personali</b> — <a href="https://www.garanteprivacy.it" target="_blank" rel="noopener" style="color:#6d28d9">garanteprivacy.it</a>' }
+        }
     },
 
     it: {
@@ -76,7 +89,8 @@ const translations = {
             p: 'Siti web moderni e sistemi digitali per ristoranti, rifugi, associazioni e aziende.',
             btnStart: 'Inizia un progetto',
             btnProjects: 'Guarda i progetti',
-            available: 'Disponibile per nuovi progetti'
+            available: 'Disponibile per nuovi progetti',
+            availableSub: 'Risposta entro 24h'
         },
         about: {
             h2: 'Chi sono',
@@ -128,7 +142,19 @@ const translations = {
             sending: 'Invio in corso…', sent: '✓ Messaggio inviato!',
             error: 'Errore — riprova', wait: 'Aspetta un momento…'
         },
-        footer: { imprint: 'Impressum' }
+        footer: { imprint: 'Impressum', privacy: 'Privacy' },
+        privacy: {
+            title: 'Informativa sulla Privacy',
+            sub: 'Ai sensi del GDPR (UE) 2016/679 e del D.Lgs. 196/2003',
+            s1: { h4: '1. Titolare del trattamento', p: 'Simon Ohrwalder · 39010 Gargazzone (BZ), Alto Adige, Italia<br>E-Mail: simon05.freelancer@gmail.com · Tel.: +39 331 913 0098' },
+            s2: { h4: '2. Dati raccolti', p: 'Il sito raccoglie esclusivamente i dati che Lei invia tramite il modulo di contatto: nome, indirizzo e-mail e messaggio. Non vengono raccolti altri dati personali.' },
+            s3: { h4: '3. Finalità e base giuridica', p: 'I dati sono utilizzati esclusivamente per rispondere alla Sua richiesta di contatto. Base giuridica: Art. 6 par. 1 lett. b e f GDPR. I dati non vengono ceduti a terzi né utilizzati per scopi commerciali.' },
+            s4: { h4: '4. Terze parti – EmailJS', p: 'Per l\'invio tecnico dei messaggi viene utilizzato <b>EmailJS</b> (EmailJS Ltd., Londra, UK). I dati inseriti (nome, e-mail, messaggio) vengono trasmessi ai server di EmailJS. Maggiori informazioni: <a href="https://www.emailjs.com/legal/privacy-policy" target="_blank" rel="noopener" style="color:#6d28d9">emailjs.com/legal/privacy-policy</a>' },
+            s5: { h4: '5. Conservazione dei dati', p: 'I dati vengono conservati solo per il tempo necessario a gestire la richiesta, al massimo 6 mesi dalla conclusione della comunicazione.' },
+            s6: { h4: '6. Nessun cookie – Nessun tracking', p: 'Il sito non utilizza cookie, Google Analytics né altre tecnologie di tracciamento o analisi. Non vengono creati profili utente.' },
+            s7: { h4: '7. I Suoi diritti', p: 'Lei ha diritto di accesso (Art. 15 GDPR), rettifica (Art. 16), cancellazione (Art. 17), limitazione (Art. 18), portabilità (Art. 20) e opposizione (Art. 21). Contatto: simon05.freelancer@gmail.com' },
+            s8: { h4: '8. Diritto di reclamo', p: 'Può presentare reclamo all\'autorità di controllo competente. In Italia: <b>Garante per la protezione dei dati personali</b> — <a href="https://www.garanteprivacy.it" target="_blank" rel="noopener" style="color:#6d28d9">garanteprivacy.it</a>' }
+        }
     },
 
     en: {
@@ -140,7 +166,8 @@ const translations = {
             p: 'Modern websites and digital systems for restaurants, mountain huts, clubs and businesses.',
             btnStart: 'Start a project',
             btnProjects: 'View projects',
-            available: 'Available for new projects'
+            available: 'Available for new projects',
+            availableSub: 'Reply within 24h'
         },
         about: {
             h2: 'About me',
@@ -192,7 +219,19 @@ const translations = {
             sending: 'Sending…', sent: '✓ Message sent!',
             error: 'Error — please try again', wait: 'Please wait a moment…'
         },
-        footer: { imprint: 'Imprint' }
+        footer: { imprint: 'Imprint', privacy: 'Privacy Policy' },
+        privacy: {
+            title: 'Privacy Policy',
+            sub: 'Pursuant to GDPR (EU) 2016/679 and D.Lgs. 196/2003',
+            s1: { h4: '1. Data Controller', p: 'Simon Ohrwalder · 39010 Gargazon (BZ), South Tyrol, Italy<br>Email: simon05.freelancer@gmail.com · Phone: +39 331 913 0098' },
+            s2: { h4: '2. Data Collected', p: 'This website only collects data that you actively submit via the contact form: your name, email address and message. No other personal data is collected.' },
+            s3: { h4: '3. Purpose & Legal Basis', p: 'Your data is used solely to respond to your contact request. Legal basis: Art. 6(1)(b) and (f) GDPR. Data is not shared with third parties or used for marketing purposes.' },
+            s4: { h4: '4. Third Party – EmailJS', p: 'Contact messages are transmitted using <b>EmailJS</b> (EmailJS Ltd., London, UK). Your submitted data (name, email, message) is sent to EmailJS servers. More information: <a href="https://www.emailjs.com/legal/privacy-policy" target="_blank" rel="noopener" style="color:#6d28d9">emailjs.com/legal/privacy-policy</a>' },
+            s5: { h4: '5. Retention Period', p: 'Your data is retained only as long as necessary to handle your request, and for a maximum of 6 months after the communication ends.' },
+            s6: { h4: '6. No Cookies – No Tracking', p: 'This website uses no cookies, no Google Analytics, and no other tracking or analytics technologies. No user profiles are created.' },
+            s7: { h4: '7. Your Rights', p: 'You have the right to: access (Art. 15 GDPR), rectification (Art. 16), erasure (Art. 17), restriction (Art. 18), data portability (Art. 20) and objection (Art. 21). Contact: simon05.freelancer@gmail.com' },
+            s8: { h4: '8. Right to Lodge a Complaint', p: 'You have the right to lodge a complaint with the relevant supervisory authority. In Italy: <b>Garante per la protezione dei dati personali</b> — <a href="https://www.garanteprivacy.it" target="_blank" rel="noopener" style="color:#6d28d9">garanteprivacy.it</a>' }
+        }
     }
 };
 
@@ -338,7 +377,64 @@ function closeOnOverlay(e) {
     if (e.target === document.getElementById("impressum-modal")) closeImpressum();
 }
 
-document.addEventListener("keydown", e => { if (e.key === "Escape") closeImpressum(); });
+
+// =========================
+// DATENSCHUTZ MODAL
+// =========================
+
+function openPrivacy() {
+    document.getElementById("privacy-modal").classList.add("active");
+    document.body.style.overflow = "hidden";
+}
+
+function closePrivacy() {
+    document.getElementById("privacy-modal").classList.remove("active");
+    document.body.style.overflow = "";
+}
+
+function closePrivacyOnOverlay(e) {
+    if (e.target === document.getElementById("privacy-modal")) closePrivacy();
+}
+
+document.addEventListener("keydown", e => {
+    if (e.key === "Escape") { closeImpressum(); closePrivacy(); closeMobileMenu(); }
+});
+
+
+// =========================
+// HAMBURGER MENU
+// =========================
+
+const hamburger = document.getElementById("hamburger");
+const mobileMenu = document.getElementById("mobile-menu");
+
+function openMobileMenu() {
+    hamburger.classList.add("active");
+    mobileMenu.classList.add("active");
+    document.body.style.overflow = "hidden";
+    hamburger.setAttribute("aria-expanded", "true");
+    mobileMenu.setAttribute("aria-hidden", "false");
+}
+
+function closeMobileMenu() {
+    hamburger.classList.remove("active");
+    mobileMenu.classList.remove("active");
+    document.body.style.overflow = "";
+    hamburger.setAttribute("aria-expanded", "false");
+    mobileMenu.setAttribute("aria-hidden", "true");
+}
+
+hamburger.addEventListener("click", () => {
+    mobileMenu.classList.contains("active") ? closeMobileMenu() : openMobileMenu();
+});
+
+document.querySelectorAll(".mobile-menu a").forEach(link => {
+    link.addEventListener("click", () => {
+        closeMobileMenu();
+        const target = document.querySelector(link.getAttribute("href"));
+        if (target) setTimeout(() => target.scrollIntoView({ behavior: "smooth" }), 300);
+    });
+});
 
 
 // =========================

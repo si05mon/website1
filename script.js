@@ -18,8 +18,8 @@ const translations = {
         about: {
             h2: 'Über mich',
             lead: 'Ich bin Simon — Entwickler, Gestalter und digitaler Problemlöser aus Südtirol.',
-            p1: 'Als 21-jähriger angehender Informatiker verbinde ich technisches Know-how mit kreativem Denken. Ich entwickle Webseiten, die nicht nur funktionieren, sondern Eindruck hinterlassen.',
-            p2: 'Mein Fokus liegt auf lokalen Unternehmen in Südtirol — von Restaurants, Vereinen bis zum Familienbetrieb.',
+            p1: 'Als 21-jähriger Informatiker verbinde ich technisches Know-how mit kreativem Denken. Ich entwickle Webseiten, die nicht nur funktionieren, sondern Eindruck hinterlassen.',
+            p2: 'Ich entwickle Websites für kleine und mittlere Unternehmen – vom Familienbetrieb über Gastronomie und Handwerk bis zum Dienstleister. Mit Sitz in Südtirol arbeite ich für Kunden in ganz Italien, Österreich und Deutschland.',
             btn: 'Kennenlernen'
         },
         stat: { years: 'Jahre', projects: 'Projekte', studyVal: 'IT', study: 'Studium' },
@@ -96,7 +96,7 @@ const translations = {
             h2: 'Chi sono',
             lead: 'Sono Simon — sviluppatore, designer e problem solver digitale di Gargazzone.',
             p1: 'Come informatico di 21 anni, combino competenze tecniche con creatività. Sviluppo siti web che non solo funzionano, ma lasciano un\'impressione duratura.',
-            p2: 'Il mio focus sono le aziende locali in Alto Adige — dal rifugio alpino all\'impresa familiare.',
+            p2: 'Realizzo siti web per piccole e medie imprese – dall\'azienda di famiglia alla ristorazione, dall\'artigianato ai servizi. Con sede in Alto Adige, lavoro per clienti in tutta Italia, in Austria e in Germania.',
             btn: 'Conosciamoci'
         },
         stat: { years: 'Anni', projects: 'Progetti', studyVal: 'IT', study: 'Studio' },
@@ -173,7 +173,7 @@ const translations = {
             h2: 'About me',
             lead: 'I\'m Simon — developer, designer and digital problem solver from Gargazon.',
             p1: 'As a 21-year-old IT student, I combine technical know-how with creative thinking. I build websites that don\'t just work, but leave a lasting impression.',
-            p2: 'My focus is on local businesses in South Tyrol — from mountain huts to family businesses.',
+            p2: 'I build websites for small and medium-sized businesses – from family-run companies to restaurants, trades and service providers. Based in South Tyrol, I work with clients across Italy, Austria and Germany.',
             btn: 'Get in touch'
         },
         stat: { years: 'Years', projects: 'Projects', studyVal: 'IT', study: 'Degree' },

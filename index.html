@@ -46,7 +46,6 @@
     }
     </script>
 
-    <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
@@ -196,7 +195,7 @@
                     <span data-i18n="stat.years">Jahre</span>
                 </div>
                 <div class="stat">
-                    <strong data-target="10" data-suffix="+">10+</strong>
+                    <strong data-target="3">3</strong>
                     <span data-i18n="stat.projects">Projekte</span>
                 </div>
                 <div class="stat">
@@ -407,26 +406,6 @@
             </div>
         </a>
 
-        <a class="project project-wip">
-            <div class="project-image project-image-wip">
-                <div class="project-wip-deco">
-                    <svg viewBox="0 0 140 90" fill="none">
-                        <rect x="8" y="8" width="124" height="74" rx="7" fill="rgba(255,255,255,0.05)"/>
-                        <rect x="40" y="28" width="60" height="8" rx="4" fill="rgba(255,255,255,0.18)"/>
-                        <rect x="30" y="44" width="80" height="5" rx="3" fill="rgba(255,255,255,0.1)"/>
-                        <rect x="35" y="55" width="70" height="5" rx="3" fill="rgba(255,255,255,0.07)"/>
-                        <circle cx="70" cy="75" r="6" fill="none" stroke="rgba(255,255,255,0.2)" stroke-width="2"/>
-                        <circle cx="70" cy="75" r="2" fill="rgba(255,255,255,0.25)"/>
-                    </svg>
-                </div>
-                <span class="project-tag" data-i18n="projects.p3.tag">In Entwicklung...</span>
-            </div>
-            <div class="project-body">
-                <h3 data-i18n="projects.p3.h3">Aktuelles Projekt</h3>
-                <p data-i18n="projects.p3.p">Eine weitere digitale Lösung befindet sich in Entwicklung — bald mehr dazu.</p>
-            </div>
-        </a>
-
     </div>
 
 </section>
@@ -570,7 +549,7 @@
         <div class="modal-content">
             <div class="imprint-block">
                 <h4>Verantwortlicher / Responsabile</h4>
-                <p>Simon Ohrwalder<br>39010 Gargazon (BZ)<br>Südtirol / Alto Adige — Italien</p>
+                <p>Simon Ohrwalder<br>Waldweg 17/b<br>39010 Gargazon (BZ)<br>Südtirol / Alto Adige — Italien</p>
             </div>
             <div class="imprint-block">
                 <h4>Kontakt</h4>
@@ -578,7 +557,8 @@
             </div>
             <div class="imprint-block">
                 <h4>Steuerliche Angaben</h4>
-                <p>Codice Fiscale: [IT]<br>Partita IVA: [IT]<br>Berufliche Tätigkeit: Freiberuflicher Webentwickler</p>
+                <!-- TODO: Partita IVA eintragen, sobald vorhanden (Pflichtangabe, Art. 35 DPR 633/72): Partita IVA: IT00000000000<br> -->
+                <p>SIMON DIGITALS – Simon Ohrwalder<br>Berufliche Tätigkeit: Freiberuflicher Webdesigner und -entwickler</p>
             </div>
             <div class="imprint-block">
                 <h4>Haftungshinweis</h4>
@@ -652,7 +632,7 @@
     </svg>
 </button>
 
-<script src="https://cdn.jsdelivr.net/npm/@emailjs/browser@4/dist/email.min.js"></script>
+<script src="assets/js/emailjs-4.4.1.min.js"></script>
 <script src="script.js"></script>
 
 </body>

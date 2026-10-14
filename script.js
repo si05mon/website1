@@ -5,7 +5,7 @@
 const translations = {
     de: {
         page: { title: 'Simon Digitals | Webdesign & Digitalisierung' },
-        nav: { about: 'Über mich', services: 'Leistungen', process: 'Ablauf', projects: 'Projekte', contact: 'Kontakt' },
+        nav: { about: 'Über mich', services: 'Leistungen', process: 'Ablauf', projects: 'Sprachen', contact: 'Kontakt' },
         hero: {
             badge: 'Freelance Developer · Südtirol',
             h1: 'Digitale Lösungen<br>für echte Erlebnisse.',
@@ -22,7 +22,7 @@ const translations = {
             p2: 'Ich entwickle Websites für kleine und mittlere Unternehmen – vom Familienbetrieb über Gastronomie und Handwerk bis zum Dienstleister. Mit Sitz in Südtirol arbeite ich für Kunden in ganz Italien, Österreich und Deutschland.',
             btn: 'Kennenlernen'
         },
-        stat: { years: 'Jahre', projects: 'Projekte', studyVal: 'IT', study: 'Studium' },
+        stat: { years: 'Jahre', projects: 'Sprachen', studyVal: 'IT', study: 'Studium' },
         photo: { label: 'Foto folgt' },
         services: {
             h2: 'Meine Leistungen',
@@ -82,7 +82,7 @@ const translations = {
 
     it: {
         page: { title: 'Simon Digitals | Web Design & Digitalizzazione' },
-        nav: { about: 'Chi sono', services: 'Servizi', process: 'Processo', projects: 'Progetti', contact: 'Contatto' },
+        nav: { about: 'Chi sono', services: 'Servizi', process: 'Processo', projects: 'Lingue', contact: 'Contatto' },
         hero: {
             badge: 'Sviluppatore Freelance · Alto Adige',
             h1: 'Soluzioni digitali<br>per esperienze reali.',
@@ -99,7 +99,7 @@ const translations = {
             p2: 'Realizzo siti web per piccole e medie imprese – dall\'azienda di famiglia alla ristorazione, dall\'artigianato ai servizi. Con sede in Alto Adige, lavoro per clienti in tutta Italia, in Austria e in Germania.',
             btn: 'Conosciamoci'
         },
-        stat: { years: 'Anni', projects: 'Progetti', studyVal: 'IT', study: 'Studio' },
+        stat: { years: 'Anni', projects: 'Lingue', studyVal: 'IT', study: 'Studio' },
         photo: { label: 'Foto in arrivo' },
         services: {
             h2: 'I miei servizi',
@@ -159,7 +159,7 @@ const translations = {
 
     en: {
         page: { title: 'Simon Digitals | Web Design & Digitalisation' },
-        nav: { about: 'About me', services: 'Services', process: 'Process', projects: 'Projects', contact: 'Contact' },
+        nav: { about: 'About me', services: 'Services', process: 'Process', projects: 'Languages', contact: 'Contact' },
         hero: {
             badge: 'Freelance Developer · South Tyrol',
             h1: 'Digital solutions<br>for real experiences.',
@@ -176,7 +176,7 @@ const translations = {
             p2: 'I build websites for small and medium-sized businesses – from family-run companies to restaurants, trades and service providers. Based in South Tyrol, I work with clients across Italy, Austria and Germany.',
             btn: 'Get in touch'
         },
-        stat: { years: 'Years', projects: 'Projects', studyVal: 'IT', study: 'Degree' },
+        stat: { years: 'Years', projects: 'Languages', studyVal: 'IT', study: 'Degree' },
         photo: { label: 'Photo coming soon' },
         services: {
             h2: 'My services',
